@@ -5,7 +5,7 @@ import { RectButton } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 
 import { Feather } from "@expo/vector-icons";
-import mapMarker from "../assets/map-marker.png";
+import mapMarker from "../images/map-marker.png";
 
 export default function OrphanagesMap() {
   const navigation = useNavigation();

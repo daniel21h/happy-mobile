@@ -11,7 +11,6 @@ interface HeaderProps {
 
 export default function Header({ title, showCancel = true }: HeaderProps) {
   const navigation = useNavigation();
-
   function handleGoBackToOrphanagesMap() {
     navigation.navigate("OrphanagesMap");
   }
@@ -34,7 +33,6 @@ export default function Header({ title, showCancel = true }: HeaderProps) {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     padding: 24,
