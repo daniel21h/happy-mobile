@@ -129,17 +129,17 @@ export default function OrphanageDetails() {
           </View>
 
           {orphanage.open_on_weekends ? (
-            <View style={[styles.scheduleItem, styles.scheduleItemGreen]}>
-              <Feather name="info" size={40} color="#39CC83" />
-              <Text style={[styles.scheduleText, styles.scheduleTextGreen]}>
-                Atendemos fim de semana
-              </Text>
-            </View>
-          ) : (
             <View style={[styles.scheduleItem, styles.scheduleItemRed]}>
               <Feather name="info" size={40} color="#FF669D" />
               <Text style={[styles.scheduleText, styles.scheduleTextRed]}>
                 Não atendemos fim de semana
+              </Text>
+            </View>
+          ) : (
+            <View style={[styles.scheduleItem, styles.scheduleItemGreen]}>
+              <Feather name="info" size={40} color="#39CC83" />
+              <Text style={[styles.scheduleText, styles.scheduleTextGreen]}>
+                Atendemos fim de semana
               </Text>
             </View>
           )}
